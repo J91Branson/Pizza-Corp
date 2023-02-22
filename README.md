@@ -10,6 +10,6 @@ This is a design for a made up pizza resturant. Just practicing the BEM conventi
 ## Built with: ##
 
 * HTML
-* Sass 
+* SCSS 
 * Bootstrap 5
 * JavaScript
