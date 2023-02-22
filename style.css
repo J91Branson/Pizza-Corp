@@ -1,0 +1,14 @@
+.navigation {
+  background-color: #37123c;
+}
+.navigation__logo {
+  margin-left: 20px;
+}
+.navigation__links--link {
+  color: white;
+}
+.navigation__links--link:hover, .navigation__links--link:focus {
+  color: #828489;
+}
+
+/*# sourceMappingURL=style.css.map */

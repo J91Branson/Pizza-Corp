@@ -1,0 +1,26 @@
+$steel-blue: #4d7ea8ff;
+$gray: #828489ff;
+$white: #ffffffff;
+$chocolate-cosmos: #4a051cff;
+$dark-purple: #37123cff;
+
+
+
+
+.navigation{
+  background-color: $dark-purple;
+  &__logo{
+      margin-left: 20px;
+    }
+  
+  &__links{
+    &--link{
+      color: $white;
+      
+      &:hover,
+      &:focus{
+        color: $gray;
+      }
+    }
+  }
+  }
