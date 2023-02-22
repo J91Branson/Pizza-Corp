@@ -5,7 +5,10 @@ $chocolate-cosmos: #4a051cff;
 $dark-purple: #37123cff;
 
 
-
+body{
+    
+    cursor: url('./Images/incognito.svg'), default;
+}
 
 .navigation{
   background-color: $dark-purple;
