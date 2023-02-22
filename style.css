@@ -10,5 +10,9 @@
 .navigation__links--link:hover, .navigation__links--link:focus {
   color: #828489;
 }
+.navigation__menu-toggler {
+  color: #4d7ea8;
+  background-color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
