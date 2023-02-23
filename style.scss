@@ -65,7 +65,7 @@ $dark-purple: #37123cff;
 //----------end button styles 
 
 body{
-    
+    font-family: 'Literata', serif;
     cursor: url('./Images/incognito.svg'), default;
 }
 
@@ -103,13 +103,19 @@ main{
     .left-right{
         &__img{
             border-radius: 25px;
+            margin-right: 0 !important;
         }
     }
 
 
 
 
-    
+    .right-left{
+        &__img{
+            border-radius: 25px;
+            margin-left: 0!important;
+        }
+    }
 }
 
 // ---------end content code

@@ -38,6 +38,7 @@
 }
 
 body {
+  font-family: "Literata", serif;
   cursor: url("./Images/incognito.svg"), default;
 }
 
@@ -61,6 +62,11 @@ body {
 
 main .left-right__img {
   border-radius: 25px;
+  margin-right: 0 !important;
+}
+main .right-left__img {
+  border-radius: 25px;
+  margin-left: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
