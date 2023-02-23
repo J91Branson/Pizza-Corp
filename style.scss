@@ -23,6 +23,31 @@ $dark-purple: #37123cff;
 
 &--primary-outline{
     background-color: transparent;
+    color: $dark-purple;
+    border-color: $dark-purple;
+
+    &:hover,
+    &:focus{
+        background-color: $dark-purple;
+        color: $white;
+    }
+}
+
+&--secondary{
+    background-color: $gray;
+    color: $white;
+    border-color: $gray;
+
+    &:hover,
+    &:focus{
+        background-color: $steel-blue;
+        border-color: $steel-blue;
+    }
+
+}
+
+&--secondary-outline{
+    background-color: transparent;
     color: $gray;
     border-color: $gray;
 
