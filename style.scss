@@ -28,39 +28,41 @@ $dark-purple: #37123cff;
 
     &:hover,
     &:focus{
-        background-color: $dark-purple;
+        background-color: $steel-blue;
         color: $white;
+        border-color: $steel-blue;
     }
 }
 
 &--secondary{
-    background-color: $gray;
+    background-color: $chocolate-cosmos;
     color: $white;
-    border-color: $gray;
+    border-color: $chocolate-cosmos;
 
     &:hover,
     &:focus{
-        background-color: $steel-blue;
-        border-color: $steel-blue;
+        background-color: $gray;
+        border-color: $gray;
     }
 
 }
 
 &--secondary-outline{
     background-color: transparent;
-    color: $gray;
-    border-color: $gray;
+    color: $chocolate-cosmos;
+    border-color: $chocolate-cosmos;
 
     &:hover,
     &:focus{
         background-color: $gray;
         color: $white;
+        border-color: $gray;
     }
 }
 }
 
 
-// 
+//----------end button styles 
 
 body{
     
@@ -69,14 +71,6 @@ body{
 
 
 
-main{
-
-    .content-section1{
-        &__img{
-            border-radius: 25px;
-        }
-    }
-}
 
 .navigation{
   background-color: $dark-purple;
@@ -102,3 +96,15 @@ main{
     background-color: white;
   }
   }
+
+  // main content code
+main{
+
+    .left-right{
+        &__img{
+            border-radius: 25px;
+        }
+    }
+}
+
+// ---------end content code
