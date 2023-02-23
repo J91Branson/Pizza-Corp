@@ -60,9 +60,16 @@ body {
   background-color: white;
 }
 
+main .left-right__row {
+  justify-content: center;
+}
 main .left-right__img {
   border-radius: 25px;
   margin-right: 0 !important;
+}
+main .right-left__row {
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 main .right-left__img {
   border-radius: 25px;

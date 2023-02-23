@@ -101,6 +101,10 @@ body{
 main{
 
     .left-right{
+        &__row{
+            justify-content: center;
+        }
+
         &__img{
             border-radius: 25px;
             margin-right: 0 !important;
@@ -111,6 +115,11 @@ main{
 
 
     .right-left{
+        &__row{
+            flex-direction:column-reverse;
+            justify-content: center;
+        }
+
         &__img{
             border-radius: 25px;
             margin-left: 0!important;
