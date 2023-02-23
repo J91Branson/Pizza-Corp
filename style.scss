@@ -5,9 +5,60 @@ $chocolate-cosmos: #4a051cff;
 $dark-purple: #37123cff;
 
 
+
+// button styes
+.btn{
+
+&--primary{
+    background-color: $dark-purple;
+    color: $white;
+    border-color: $dark-purple;
+
+    &:hover,
+    &:focus{
+        background-color: $steel-blue;
+        border-color: $steel-blue;
+    }
+}
+
+&--primary-outline{
+    background-color: transparent;
+    color: $gray;
+    border-color: $gray;
+
+    &:hover,
+    &:focus{
+        background-color: $gray;
+        color: $white;
+    }
+}
+
+
+
+
+
+
+
+
+}
+
+
+// 
+
 body{
     
     cursor: url('./Images/incognito.svg'), default;
+}
+
+
+
+main{
+
+    .content-section1{
+        &__img{
+            border-radius: 25px;
+        }
+    }
 }
 
 .navigation{
@@ -23,6 +74,7 @@ body{
       &:hover,
       &:focus{
         color: $gray;
+        cursor: pointer;
       }
     }
   }

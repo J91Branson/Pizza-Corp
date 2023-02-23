@@ -1,5 +1,28 @@
+.btn--primary {
+  background-color: #37123c;
+  color: white;
+  border-color: #37123c;
+}
+.btn--primary:hover, .btn--primary:focus {
+  background-color: #4d7ea8;
+  border-color: #4d7ea8;
+}
+.btn--primary-outline {
+  background-color: transparent;
+  color: #828489;
+  border-color: #828489;
+}
+.btn--primary-outline:hover, .btn--primary-outline:focus {
+  background-color: #828489;
+  color: white;
+}
+
 body {
   cursor: url("./Images/incognito.svg"), default;
+}
+
+main .content-section1__img {
+  border-radius: 25px;
 }
 
 .navigation {
@@ -13,6 +36,7 @@ body {
 }
 .navigation__links--link:hover, .navigation__links--link:focus {
   color: #828489;
+  cursor: pointer;
 }
 .navigation__menu-toggler {
   color: #4d7ea8;
