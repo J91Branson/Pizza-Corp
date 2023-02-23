@@ -37,8 +37,23 @@
   border-color: #828489;
 }
 
-body {
+.text {
   font-family: "Literata", serif;
+}
+.text--small {
+  font-size: 12px;
+}
+.text--medium {
+  font-size: 20px;
+}
+.text--large {
+  font-size: 48px;
+}
+.text--center {
+  text-align: center;
+}
+
+body {
   cursor: url("./Images/incognito.svg"), default;
 }
 
