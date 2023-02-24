@@ -1,44 +1,53 @@
+:root {
+  --primary-hover: #4d7ea8ff;
+  --secondary-hover: #828489ff;
+  --white: #ffffffff;
+  --secondary-color: #4a051cff;
+  --primary-color: #37123cff;
+}
+
 .btn--primary {
-  background-color: #37123c;
-  color: white;
-  border-color: #37123c;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
 }
 .btn--primary:hover, .btn--primary:focus {
-  background-color: #4d7ea8;
-  border-color: #4d7ea8;
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 .btn--primary-outline {
   background-color: transparent;
-  color: #37123c;
-  border-color: #37123c;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 .btn--primary-outline:hover, .btn--primary-outline:focus {
-  background-color: #4d7ea8;
-  color: white;
-  border-color: #4d7ea8;
+  background-color: var(--primary-hover);
+  color: var(--white);
+  border-color: var(--primary-hover);
 }
 .btn--secondary {
-  background-color: #4a051c;
-  color: white;
-  border-color: #4a051c;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-color: var(--secondary-color);
 }
 .btn--secondary:hover, .btn--secondary:focus {
-  background-color: #828489;
-  border-color: #828489;
+  background-color: var(--secondary-hover);
+  border-color: var(--secondary-hover);
 }
 .btn--secondary-outline {
   background-color: transparent;
-  color: #4a051c;
-  border-color: #4a051c;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 .btn--secondary-outline:hover, .btn--secondary-outline:focus {
-  background-color: #828489;
-  color: white;
-  border-color: #828489;
+  background-color: var(--secondary-hover);
+  color: var(--white);
+  border-color: var(--secondary-hover);
 }
 
 .text {
   font-family: "Literata", serif;
+  font-weight: 400;
 }
 .text--small {
   font-size: 12px;
@@ -73,20 +82,20 @@ body {
 }
 
 .navigation {
-  background-color: #37123c;
+  background-color: var(--primary-color);
 }
 .navigation__logo {
   margin-left: 20px;
 }
 .navigation__links--link {
-  color: white;
+  color: var(--white);
 }
 .navigation__links--link:hover, .navigation__links--link:focus {
-  color: #828489;
+  color: var(--secondary-hover);
   cursor: pointer;
 }
 .navigation__menu-toggler {
-  color: #4d7ea8;
+  color: var(--primary-hover);
   background-color: white;
 }
 

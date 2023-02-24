@@ -1,8 +1,8 @@
-$steel-blue: #4d7ea8ff;
-$gray: #828489ff;
-$white: #ffffffff;
-$chocolate-cosmos: #4a051cff;
-$dark-purple: #37123cff;
+:root {--primary-hover: #4d7ea8ff;
+--secondary-hover: #828489ff;
+--white: #ffffffff;
+--secondary-color: #4a051cff;
+--primary-color: #37123cff;}
 
 
 
@@ -10,53 +10,53 @@ $dark-purple: #37123cff;
 .btn{
 
 &--primary{
-    background-color: $dark-purple;
-    color: $white;
-    border-color: $dark-purple;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
 
     &:hover,
     &:focus{
-        background-color: $steel-blue;
-        border-color: $steel-blue;
+        background-color: var(--primary-hover);
+        border-color: var(--primary-hover);
     }
 }
 
 &--primary-outline{
     background-color: transparent;
-    color: $dark-purple;
-    border-color: $dark-purple;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 
     &:hover,
     &:focus{
-        background-color: $steel-blue;
-        color: $white;
-        border-color: $steel-blue;
+        background-color: var(--primary-hover);
+        color: var(--white);
+        border-color: var(--primary-hover);
     }
 }
 
 &--secondary{
-    background-color: $chocolate-cosmos;
-    color: $white;
-    border-color: $chocolate-cosmos;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
 
     &:hover,
     &:focus{
-        background-color: $gray;
-        border-color: $gray;
+        background-color: var(--secondary-hover);
+        border-color: var(--secondary-hover);
     }
 
 }
 
 &--secondary-outline{
     background-color: transparent;
-    color: $chocolate-cosmos;
-    border-color: $chocolate-cosmos;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
 
     &:hover,
     &:focus{
-        background-color: $gray;
-        color: $white;
-        border-color: $gray;
+        background-color: var(--secondary-hover);
+        color: var(--white);
+        border-color: var(--secondary-hover);
     }
 }
 }
@@ -64,10 +64,13 @@ $dark-purple: #37123cff;
 
 //----------end button styles 
 
-
+@mixin primary-font{
+    font-family: 'Literata', serif;
+    font-weight: 400;
+} 
 // typography styles
     .text{
-        font-family: 'Literata', serif;
+        @include primary-font;
 
         &--small{
             font-size: 12px;
@@ -116,18 +119,18 @@ body{
 
 
 .navigation{
-  background-color: $dark-purple;
+  background-color: var(--primary-color);
   &__logo{
       margin-left: 20px;
     }
   
   &__links{
     &--link{
-      color: $white;
+      color: var(--white);
       
       &:hover,
       &:focus{
-        color: $gray;
+        color: var(--secondary-hover);
         cursor: pointer;
       }
     }
@@ -135,7 +138,7 @@ body{
 
 
   &__menu-toggler{
-    color: $steel-blue;
+    color: var(--primary-hover);
     background-color: white;
   }
   }
