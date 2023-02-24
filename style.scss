@@ -66,31 +66,52 @@
 // mixins 
 @mixin primary-font{
     font-family: 'Literata', serif;
-    font-weight: 300;
 } 
 
+@mixin secondary-font{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
 @mixin small{
-    font-size: 12px;    
+    font-size: 12px;   
+    font-weight: 300; 
 }
 
 @mixin medium{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 @mixin large{
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
 }
 
 @mixin title{
     margin-top: 60px;
 }
+@mixin center{
+    text-align: center;
+}
 // 
 // typography styles
-    // .text{
-    //     @include primary-font;
-    // }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a{
+        @include primary-font;
+    }
+
+    .standalone-title{
+        @include large;
+        @include center;
+        @include title;
+        text-transform: uppercase;
+    }
 
 // end typography styles
 
@@ -129,31 +150,44 @@ body{
   // main content code
 main{
 
-    .left-right{
+    .featured-image{
         &__row{
             justify-content: center;
+        }
+
+        &__header{
+            @include primary-font;
+            @include large;
+        }
+
+        &__body{
+            @include secondary-font;
+            @include medium;
         }
 
         &__img{
             border-radius: 25px;
             margin-right: 0 !important;
         }
-    }
 
+        &--left{
+            &__row{
+                flex-direction:column-reverse;
+                justify-content: center;
+            }
 
-
-
-    .right-left{
-        &__row{
-            flex-direction:column-reverse;
-            justify-content: center;
-        }
-
-        &__img{
-            border-radius: 25px;
-            margin-left: 0!important;
+            &__img{
+                border-radius: 25px;
+                margin-left: 0 !important;
+            }
+    
         }
     }
+
+
+
+
+    
 }
 
 // ---------end content code
