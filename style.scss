@@ -63,51 +63,34 @@
 
 
 //----------end button styles 
-
+// mixins 
 @mixin primary-font{
     font-family: 'Literata', serif;
-    font-weight: 400;
+    font-weight: 300;
 } 
+
+@mixin small{
+    font-size: 12px;    
+}
+
+@mixin medium{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@mixin large{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@mixin title{
+    margin-top: 60px;
+}
+// 
 // typography styles
-    .text{
-        @include primary-font;
-
-        &--small{
-            font-size: 12px;
-        }
-
-        &--medium{
-            font-size: 20px;
-        }
-
-        &--large{
-            font-size: 48px;
-        }
-
-        &--center{
-            text-align: center;
-        }
-
-        &--tb-margin{
-            margin: 20px 0;
-        }
-
-        &--semi-bold{
-            font-weight: 500;
-        }
-
-        &--bold{
-            font-weight: 700;
-        }
-
-        &--upper{
-            text-transform: uppercase;
-        }
-
-        &--title{
-            margin-top: 60px;
-        }
-    }
+    // .text{
+    //     @include primary-font;
+    // }
 
 // end typography styles
 
